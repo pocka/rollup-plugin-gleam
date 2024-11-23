@@ -1,0 +1,10 @@
+# Version management tools read this file and install/setup corresponding
+# version of the tools. Popular version management tools:
+# * [ASDF](https://asdf-vm.com/)
+# * [mise](https://mise.jdx.dev/)
+#
+# SPDX-FileCopyrightText: 2024 Shota FUJI <pockawoooh@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+nodejs 22
+gleam  1.6
+dprint 0.47

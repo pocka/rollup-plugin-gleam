@@ -1,0 +1,23 @@
+# Coding style for this project.
+# <https://editorconfig.org/>
+#
+# SPDX-FileCopyrightText: 2024 Shota FUJI <pockawoooh@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+
+[*.md]
+# Trailing whitespaces is used as a line break in Markdown
+trim_trailing_whitespace = true
+
+# `gleam format` is not configurable
+[*.gleam]
+indent_style = space
+indent_size = 2

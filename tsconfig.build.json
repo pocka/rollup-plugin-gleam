@@ -1,0 +1,9 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "esm/es2020",
+		"noEmit": false,
+		"declaration": true
+	},
+	"include": ["./src/plugin.ts"]
+}

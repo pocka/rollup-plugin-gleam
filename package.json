@@ -1,0 +1,49 @@
+{
+	"name": "@pocka/rollup-plugin-gleam",
+	"version": "0.1.0",
+	"description": "Rollup plugin for Gleam language.",
+	"keywords": ["rollup-plugin", "vite-plugin"],
+	"bugs": {
+		"url": "https://github.com/pocka/rollup-plugin-gleam/issues"
+	},
+	"license": "Apache-2.0",
+	"author": {
+		"name": "Shota FUJI",
+		"email": "pockawoooh@gmail.com"
+	},
+	"files": [
+		"esm/es2020/plugin.js",
+		"esm/es2020/plugin.d.ts",
+		"LICENSES/*.txt",
+		"docs/SECURITY.md",
+		"package.json.license"
+	],
+	"type": "module",
+	"exports": {
+		".": "esm/es2020/plugin.js"
+	},
+	"peerDependencies": {
+		"rollup": "^1.20.0 || ^2.0.0 || ^3.0.0 || ^4.0.0"
+	},
+	"peerDependenciesMeta": {
+		"rollup": {
+			"optional": true
+		}
+	},
+	"dependencies": {
+		"js-toml": "^1.0.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^12.1.1",
+		"@types/node": "^22.9.3",
+		"rollup": "^4.27.3",
+		"typescript": "^5.7.2",
+		"vite": "^5.4.11",
+		"vitest": "^2.1.5"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"test": "vitest",
+		"prepare": "npm run build"
+	}
+}
