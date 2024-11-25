@@ -1,3 +1,8 @@
+// Config file for dprint, a pluggable code formatter.
+// <https://dprint.dev/>
+//
+// SPDX-FileCopyrightText: 2024 Shota FUJI <pockawoooh@gmail.com>
+// SPDX-License-Identifier: Apache-2.0
 {
 	"biome": {
 		"lineWidth": 90
