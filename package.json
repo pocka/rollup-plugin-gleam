@@ -42,7 +42,7 @@
 		"vitest": "^2.1.5"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.build.json",
+		"build": "tsc -p tsconfig.build.jsonc",
 		"test": "vitest",
 		"prepare": "npm run build"
 	}
