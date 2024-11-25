@@ -28,7 +28,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: .tool-versions
+          # setup-node does not support major-only version notation in .tool-versions.
+          node-version: "22.x"
           cache: npm
 
       - name: Install dependencies
