@@ -1,0 +1,41 @@
+# SPDX-FileCopyrightText: 2024 Shota FUJI <pockawoooh@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: Run tests
+
+on:
+  push:
+    # Runs on every push
+    branches:
+      - "*"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Gleam
+        uses: erlef/setup-beam@v1
+        with:
+          # Reading of `.tool-versions` in setup-beam is very limited: it only supports
+          # fully specified version strings, such as 1.2.3.
+          otp-version: "27"
+          gleam-version: "1.6"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .tool-versions
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Check types
+        run: npx tsc

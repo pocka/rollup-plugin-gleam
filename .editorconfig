@@ -21,3 +21,8 @@ trim_trailing_whitespace = true
 [*.gleam]
 indent_style = space
 indent_size = 2
+
+# YAML cannot handle tabs
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2

@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2024 Shota FUJI <pockawoooh@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: Check copyright attributions
+
+on:
+  push:
+    # Runs on every push
+    branches:
+      - "*"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run REUSE lint tool
+        uses: fsfe/reuse-action@v5
