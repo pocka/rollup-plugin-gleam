@@ -116,6 +116,8 @@ export function gleam({
 
 			gleamToml = parsed;
 		},
+		// FIXME: While Vite does trigger `watchChange`, it does not implement it correctly.
+		//        As a result, compile error crashes the process, which differs from what Rollup does.
 		async watchChange(id, _change) {
 			// Whenever indirectly imported .gleam file is changed, build the whole project.
 			// Gleam compiler does the incremental compilation (we don't have a way to partially compile.)
