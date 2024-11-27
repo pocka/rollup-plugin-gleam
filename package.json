@@ -20,8 +20,12 @@
 	],
 	"type": "module",
 	"exports": {
-		".": "esm/es2020/plugin.js"
+		".": {
+			"types": "./esm/es2020/plugin.d.ts",
+			"default": "./esm/es2020/plugin.js"
+		}
 	},
+	"types": "./esm/es2020/plugin.d.ts",
 	"peerDependencies": {
 		"rollup": "^1.20.0 || ^2.0.0 || ^3.0.0 || ^4.0.0"
 	},
