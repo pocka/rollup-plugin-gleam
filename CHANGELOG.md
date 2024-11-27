@@ -12,11 +12,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2024-11-27
+
+### Fixed
+
+- Gleam compile error crashing Vite server.
+- Gleam compilation running twice for some files.
+- Node.js error thrown during importing this plugin due to its module path not starting with a dot.
+- TypeScript error about missing type definition.
+
 ## [0.1.0] - 2024-11-25
 
 ### Added
 
 - Initial plugin code.
 
-[unreleased]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.0...HEAD
+[unreleased]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/pocka/rollup-plugin-gleam/releases/tag/v0.1.0
