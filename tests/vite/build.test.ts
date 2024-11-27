@@ -48,6 +48,9 @@ describe("Vite compatibility", () => {
 		// Vite seems to have no way to test HMR/watch things from outside.
 		// Unfortunately polling is the most reliable option.
 		await vitest.waitFor(async () => {
+			// We have to request a module that triggers transform, for some reasons...
+			await server.transformRequest("/src/app.gleam");
+
 			const appMjsAfter = await server.transformRequest(
 				"/build/dev/javascript/test_vite/app.mjs",
 			);

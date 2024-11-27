@@ -35,7 +35,8 @@
 		}
 	},
 	"dependencies": {
-		"js-toml": "^1.0.0"
+		"js-toml": "^1.0.0",
+		"readdirp": "^4.0.2"
 	},
 	"devDependencies": {
 		"@rollup/plugin-typescript": "^12.1.1",
