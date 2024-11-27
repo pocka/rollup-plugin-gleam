@@ -163,7 +163,10 @@ export function gleam({
 				 * -> "src/foo/bar.gleam"
 				 */
 				const gleamSrc = path.resolve(srcDir, modulePath) + ".gleam";
-				this.addWatchFile(gleamSrc);
+
+				if (!this.getWatchFiles().includes(gleamSrc)) {
+					this.addWatchFile(gleamSrc);
+				}
 
 				// Do not touch code. Only important thing here is `addWatchFiles(gleamSrc)`.
 				return null;
