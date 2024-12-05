@@ -12,8 +12,8 @@
 		"email": "pockawoooh@gmail.com"
 	},
 	"files": [
-		"esm/es2020/plugin.js",
-		"esm/es2020/plugin.d.ts",
+		"esm/es2022/plugin.js",
+		"esm/es2022/plugin.d.ts",
 		"LICENSES/*.txt",
 		"docs/SECURITY.md",
 		"package.json.license"
@@ -21,11 +21,11 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./esm/es2020/plugin.d.ts",
-			"default": "./esm/es2020/plugin.js"
+			"types": "./esm/es2022/plugin.d.ts",
+			"default": "./esm/es2022/plugin.js"
 		}
 	},
-	"types": "./esm/es2020/plugin.d.ts",
+	"types": "./esm/es2022/plugin.d.ts",
 	"peerDependencies": {
 		"rollup": "^1.20.0 || ^2.0.0 || ^3.0.0 || ^4.0.0"
 	},

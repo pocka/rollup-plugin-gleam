@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Rename directory path from `esm/es2020` to `esm/es2022`.
+
 ## [0.1.2] - 2024-12-05
 
 ### Changed

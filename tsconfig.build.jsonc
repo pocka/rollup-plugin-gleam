@@ -5,7 +5,7 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"outDir": "esm/es2020",
+		"outDir": "esm/es2022",
 		"noEmit": false,
 		"declaration": true
 	},

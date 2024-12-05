@@ -32,7 +32,7 @@ You can manually compile them by running:
 $ npm run build
 ```
 
-Compiled JavaScript files are located under `esm/es2020/` directory.
+Compiled JavaScript files are located under `esm/es2022/` directory.
 That directory is ignored from VCS, and included in published tarball.
 
 To clean the compiled files, simply delete `esm/` directory.
