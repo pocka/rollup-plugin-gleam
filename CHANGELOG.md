@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2024-12-05
+
+### Changed
+
+- Reduced the number of indirect dependencies by changing TOML parser library.
+
 ## [0.1.1] - 2024-11-27
 
 ### Fixed
@@ -27,6 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial plugin code.
 
-[unreleased]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.1...HEAD
+[unreleased]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/pocka/rollup-plugin-gleam/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/pocka/rollup-plugin-gleam/releases/tag/v0.1.0

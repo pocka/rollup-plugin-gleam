@@ -1,6 +1,6 @@
 {
 	"name": "@pocka/rollup-plugin-gleam",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Rollup plugin for Gleam language.",
 	"keywords": ["rollup-plugin", "vite-plugin"],
 	"bugs": {
