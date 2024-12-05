@@ -9,7 +9,7 @@ import * as path from "node:path";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 
-import * as toml from "js-toml";
+import * as toml from "smol-toml";
 import readdirp from "readdirp";
 import type { Plugin } from "rollup";
 
@@ -106,7 +106,7 @@ export function gleam({
 					: fileURLToPath(gleamTomlPathOrUrl),
 			);
 
-			const parsed = toml.load(await readFile(gleamTomlPathOrUrl, { encoding: "utf8" }));
+			const parsed = toml.parse(await readFile(gleamTomlPathOrUrl, { encoding: "utf8" }));
 			if (!isGleamTOML(parsed)) {
 				// TypeScript can't narrow types using `never`. Putting `return` after this line
 				// triggers `Unreachable code detected.` so we have to *return never*.
